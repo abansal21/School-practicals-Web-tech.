@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>regex</title>
+<script type="text/javascript"> 
+function processString()
+{
+document.getElementById("txtarea").value="";
+var inputStr=document.getElementById("txtbox").value;
+var result=inputStr.match(/\d+/g);
+if(result!=null)
+{
+for(var  i=0;i<result.length;i++)
+{
+document.getElementById("txtarea").value+=result[i]+"\r\n";}}}
+</script>
+</head>
+<body>
+<h2>This will list all the positive integers inside the given string.</h2>
+<input type="text" id="txtbox" style="width:250px"/></br></br>
+<input type="button" value="processstring" onclick="processString()"/>
+<br></br>
+<textarea id="txtarea" rows="4" cols="30" ></textarea>
+
+
+</body>
+</html>

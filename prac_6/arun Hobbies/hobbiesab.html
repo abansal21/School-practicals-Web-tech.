@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  
+</script>
+<script>
+function myFunction(id) {
+	var a = "https://www.google.co.in/search?q="
+	
+    window.open(a.concat(id));
+}
+</script>
+</head>
+<body>
+ 
+
+<div class="jumbotron text-center">
+  <h1>My Webpage</h1>
+  <p>A page of my faivorite Hobbies</p> 
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Playing chess</h3>
+
+      <img style= "width:200px;"src = "chessab.jpg">
+	   <button type="button" onclick="myFunction(this.id)" class="btn btn-primary" id = "chess">Click to Know More</button>
+	  
+
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Cooking</h3>
+
+      <img style= "width:200px;"src = "abcooking.jpg">
+	   <button type="button" id = "cooking" onclick="myFunction(this.id)" class="btn btn-primary">Click to Know More</button>
+    </div>
+    <div class="col-sm-4">
+      <h3>Coding</h3>        
+
+ <img style= "width:200px;"src = "abcoding.jpg">
+	   <button type="button" id = "coding" onclick="myFunction(this.id)" class="btn btn-primary">Click to Know More</button>
+    </div>
+  </div>
+  <div class="row">
+	<div class="col-sm-4">
+		<h3>Listening to good Music</h3>
+		<img style= "width:200px;"src = "abmusic.jpg">
+	   <button type="button" id = "music" onclick="myFunction(this.id)" class="btn btn-primary">Click to Know More</button>
+   
+	</div>
+  </div>
+</div>
+<center><p>I am Arun</p><center>
+</body>
+</html>

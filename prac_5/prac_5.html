@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>form validation </title>
+</head>
+<body>
+<script type="text/javascript">  
+function validate(){  
+var name=document.f1.name.value;  
+var passwordlength=document.f1.password.value.length;  
+var status=false;  
+if(name==""){  
+document.getElementById("namelocation").innerHTML=  
+"  Please enter your name";  
+document.getElementById("namelocationg").innerHTML="";
+status=false;
+}else{  
+document.getElementById("namelocationg").innerHTML="OK";
+document.getElementById("namelocation").innerHTML=  "";
+status=true;
+}  
+  
+if(passwordlength<6){  
+document.getElementById("passwordlocation").innerHTML=  
+"  Password must be greater than 6";  
+document.getElementById("passwordlocationg").innerHTML = ""
+status=false; 
+}else{  
+document.getElementById("passwordlocationg").innerHTML="  OK"; 
+document.getElementById("passwordlocation").innerHTML = "" 
+}  
+  
+return status;  
+}  
+</script>  
+<form name="f1" action="thankyou.html" onsubmit="return validate()">  
+<table>
+<tr><td>Name:</td><td><input type="text" name="name"/>  
+<span id="namelocation" style="color:red"></span>
+<span id = "namelocationg" style = "color:green"></span></td></tr> 
+<tr><td>Password:</td><td><input type="password" name="password"/>  
+<span id="passwordlocation" style="color:red"></span>
+<span id="passwordlocationg" style="color:green"></span></td></tr>
+<tr><td colspan="2"><input type="submit" value="register"/>  </td></tr>
+</table>
+</form>  
+</body>
+</html>
